@@ -143,6 +143,8 @@ namespace Trees
                 }
             }
         }
+
+
     }
 
     public class Main_Program
@@ -151,8 +153,16 @@ namespace Trees
         {
             Tree<int> tree = new Tree<int>(1, new Tree<int>(2, new Tree<int>(21), new Tree<int>(24)), new Tree<int>(3), new Tree<int>(4, new Tree<int>(43), new Tree<int>(46)));
             CountInternalNodes(tree);
-            Console.WriteLine();
             CountLeaves(tree);
+
+            /*
+             * I i put the 2 methods in Main_Program into the class Tree,
+             * I have to instantiate the classes in the following way:
+             * 
+             * tree.CountLeaves(tree);
+             * tree.InternalNodes(tree);
+             */
+            
         }
 
         static void CountInternalNodes(Tree<int> tree)
