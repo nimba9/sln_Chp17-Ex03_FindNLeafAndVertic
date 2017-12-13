@@ -156,7 +156,7 @@ namespace Trees
             CountLeaves(tree);
 
             /*
-             * I i put the 2 methods in Main_Program into the class Tree,
+             * If I put the 2 methods from the Main_Program into the class Tree,
              * I have to instantiate the classes in the following way:
              * 
              * tree.CountLeaves(tree);
